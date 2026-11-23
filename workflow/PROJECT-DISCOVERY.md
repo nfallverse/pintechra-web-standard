@@ -1,233 +1,292 @@
-# Project Discovery Guidelines
+# Project Discovery — Product Catalog Website
 
 ## 1. Purpose
 
-This document defines the project discovery process for PINTECHRA web development projects.
+This document defines the discovery process for product catalog website projects.
 
-The objective is to understand the project's goals, users, requirements, constraints, and opportunities before design and implementation begin.
+The objective is to understand the brand, products, audience, business goals, content, and technical requirements before design and development begin.
 
-Every project must start with a clear understanding of the problem it intends to solve.
+Do not start implementation until the essential project requirements are sufficiently understood.
 
-## 2. Core Principles
+## 2. Discovery Principles
 
-- Understand before building.
-- Ask relevant questions.
-- Identify the real problem.
-- Avoid unsupported assumptions.
-- Prioritize user needs.
-- Define measurable objectives.
-- Document important decisions.
-- Adapt the discovery process to project complexity.
+- Understand the actual business and product context.
+- Ask only questions that help define the project.
+- Do not assume missing product information.
+- Distinguish confirmed information from assumptions.
+- Prioritize essential requirements over optional features.
+- Avoid unnecessary complexity.
+- Adapt the discovery process to the project's scale.
 
-Do not start implementation based on an unclear brief.
+## 3. Brand and Business Context
 
-## 3. Project Overview
+Understand the business behind the catalog.
 
-Identify the basic information:
+Gather:
 
-- Project name.
-- Brand or organization.
-- Project type.
-- Main purpose.
-- Product or service.
-- Project background.
-- Expected outcome.
+- Brand or business name
+- Business description
+- Industry or product category
+- Brand background
+- Brand personality
+- Brand positioning
+- Existing website or social media
+- Brand assets, such as logos and guidelines
 
-Common project types include:
+Identify what makes the brand and its products distinctive.
 
-- Personal portfolio.
-- Product catalog.
-- Landing page.
-- Company profile.
-- E-commerce website.
-- Dashboard.
-- Web application.
+## 4. Product Information
 
-These categories are references, not limitations.
+Understand what the catalog will present.
 
-## 4. Business and Project Goals
+Gather:
 
-Understand what the project needs to achieve.
+- Product names
+- Product categories
+- Product descriptions
+- Product images
+- Product specifications
+- Main features
+- Customer benefits
+- Available variants
+- Pricing information, if applicable
+- Product availability
+- Product status
 
-Consider:
+Product status may include:
 
-- What problem does the project solve?
-- What is its primary objective?
-- What action should visitors take?
-- What makes the project valuable?
-- What defines project success?
+- Prototype
+- In development
+- Available
+- Discontinued
 
-Avoid vague objectives such as simply making the website look modern.
+Never present unverified information as a confirmed product fact.
 
 ## 5. Target Audience
 
-Identify the intended users.
+Identify the intended visitors.
 
-Consider:
+Understand:
 
-- User demographics when relevant.
-- User needs.
-- User expectations.
-- Technical familiarity.
-- Common problems.
-- Device preferences.
-- Accessibility requirements.
+- Who are the potential customers?
+- What problems or needs do they have?
+- What information do they need before making a decision?
+- What factors influence their purchasing decisions?
+- What devices are they likely to use?
 
-Do not invent audience characteristics without evidence.
+Use these findings to determine the content hierarchy and user experience.
 
-## 6. Functional Requirements
+## 6. Website Objectives
 
-Identify what the website must do.
+Determine the primary purpose of the catalog.
 
-Examples:
+Possible objectives:
 
-- Display information.
-- Present products.
-- Collect inquiries.
-- Process transactions.
-- Manage user accounts.
-- Display analytics.
-- Connect to external APIs.
-- Provide administrative controls.
+- Present products professionally.
+- Increase brand awareness.
+- Explain product features and specifications.
+- Generate customer inquiries.
+- Direct visitors to purchasing channels.
+- Help visitors compare products.
 
-Separate essential requirements from optional enhancements.
+Identify the primary objective and supporting objectives.
 
-## 7. Content Requirements
+## 7. Content and Assets
 
-Identify the content needed for the website.
+Identify available content and missing assets.
 
-Consider:
+Check:
 
-- Page titles.
-- Product descriptions.
-- Brand information.
-- Images and videos.
-- Contact information.
-- Legal information.
-- Calls to action.
-- Supporting documentation.
+- Logo files
+- Product photographs
+- Product illustrations
+- Product descriptions
+- Technical specifications
+- Brand colors
+- Brand typography
+- Supporting graphics
+- Contact information
+- Legal or business information, if required
 
-Clearly identify missing content.
+Do not use unrelated stock imagery as a substitute for actual product images without approval.
 
-Never invent factual product specifications, testimonials, prices, or company claims.
+## 8. Website Structure and Features
 
-## 8. Technical Constraints
+Determine which pages and features are necessary.
 
-Identify technical requirements and limitations.
+Possible pages:
 
-Consider:
+- Home
+- Product Catalog
+- Product Details
+- About
+- Contact
 
-- Preferred technology.
-- Existing codebase.
-- Hosting environment.
-- Domain availability.
-- API integrations.
-- Database requirements.
-- Authentication.
-- Security requirements.
-- Budget and development time.
-- Device and browser support.
+Possible features:
 
-Recommend technology based on project needs, not popularity.
+- Product categories
+- Search
+- Filtering
+- Product comparison
+- Image gallery
+- Inquiry form
+- WhatsApp contact
+- Product availability indicators
 
-## 9. Design Preferences
+Select features according to actual project needs.
+
+Do not add features merely because they are common in other catalog websites.
+
+## 9. Visual and Brand Direction
 
 Understand the desired visual direction.
 
-Ask about:
+Explore:
 
-- Brand personality.
-- Preferred visual references.
-- Typography preferences.
-- Color preferences.
-- Layout expectations.
-- Animation preferences.
-- Existing brand guidelines.
-- Designs or styles to avoid.
+- Desired brand impression
+- Preferred visual references
+- Preferred colors
+- Typography preferences
+- Layout preferences
+- Photography style
+- Motion and interaction preferences
+- Existing design constraints
 
-Do not force one visual style onto every project.
+Use the answers to develop an original creative concept.
 
-## 10. Scope and Priorities
+Neumorphism may be considered when appropriate, but it is not mandatory.
 
-Organize requirements into three categories:
+## 10. Technical Requirements
 
-### Must Have
-Features required for the project to function.
+Identify technical constraints and expectations.
 
-### Should Have
-Important improvements that provide meaningful value.
+Gather:
 
-### Could Have
-Optional enhancements that can be developed later.
+- Preferred technology stack, if any
+- Hosting environment
+- Domain availability
+- Backend requirements
+- Database requirements
+- Third-party integrations
+- Content management requirements
+- Maintenance expectations
+- Budget or infrastructure limitations
 
-Avoid expanding the project beyond its actual needs.
+Recommend a suitable technical approach based on actual needs.
 
-## 11. Discovery Questions
+Avoid unnecessary frameworks, services, and dependencies.
 
-AI agents should ask focused questions when important information is missing.
+## 11. Project Scope
 
-Questions should clarify:
+Define what is included in the project.
 
-- Project purpose.
-- Target audience.
-- Required functionality.
-- Content availability.
-- Brand identity.
-- Technical constraints.
-- Success criteria.
+Document:
 
-Do not overwhelm users with unnecessary questionnaires.
+- Required pages
+- Required features
+- Required content
+- Required integrations
+- Design deliverables
+- Development deliverables
+- Testing requirements
+- Deployment requirements
 
-Ask only questions that materially affect project decisions.
+Separate requirements into:
 
-## 12. Discovery Output
+- Essential
+- Optional
+- Future improvements
 
-Before moving to the design stage, produce a concise project brief containing:
+Avoid scope expansion without a clear reason.
 
-1. Project overview.
-2. Main objectives.
-3. Target audience.
-4. User needs.
-5. Functional requirements.
-6. Content requirements.
-7. Design preferences.
-8. Technical constraints.
-9. Project scope.
-10. Success criteria.
-11. Missing information and assumptions.
+## 12. Discovery Questions
 
-Clearly distinguish confirmed information from assumptions.
+Use focused questions to fill important information gaps.
 
-## 13. AI Discovery Requirements
+Suggested questions:
 
-AI agents must:
+### Brand
 
-1. Read the available project brief.
-2. Identify missing critical information.
-3. Ask focused clarification questions.
-4. Avoid inventing requirements.
-5. Identify technical and business constraints.
-6. Prioritize project requirements.
-7. Document important decisions.
-8. Confirm the project scope before implementation.
-9. Adapt the discovery process to project complexity.
-10. Never treat assumptions as confirmed facts.
+- What is the brand name?
+- What products or services does the business offer?
+- What impression should the brand communicate?
 
-## 14. Discovery Quality Checklist
+### Products
 
-- [ ] Project purpose is understood.
-- [ ] Main objectives are defined.
-- [ ] Target audience is identified.
-- [ ] Functional requirements are documented.
-- [ ] Content requirements are identified.
-- [ ] Technical constraints are understood.
-- [ ] Design preferences are documented.
-- [ ] Scope and priorities are clear.
-- [ ] Missing information is identified.
-- [ ] Success criteria are defined.
+- How many products will be displayed?
+- What information is available for each product?
+- Are product images and specifications ready?
+- Are the products prototypes or commercially available?
 
-## 15. Final Principle
+### Audience
 
-A successful website begins with a clear understanding of what needs to be built and why.
+- Who is the target audience?
+- What information do visitors need most?
+- What should visitors do after viewing a product?
 
-Do not solve the wrong problem with good-looking design or complicated technology.
+### Website
+
+- What is the main objective of the catalog?
+- Which pages and features are necessary?
+- How should visitors contact the business?
+
+### Design
+
+- Are there existing brand guidelines?
+- Are there visual references?
+- What visual direction should be avoided?
+
+### Technical
+
+- Is there an existing domain or hosting?
+- Is a backend or database required?
+- Are there specific technical constraints?
+
+Do not ask every question automatically. Ask only what is relevant and still unknown.
+
+## 13. Discovery Deliverables
+
+Before moving to design, prepare a concise project brief containing:
+
+1. Project overview
+2. Brand summary
+3. Product information
+4. Target audience
+5. Website objectives
+6. Required pages
+7. Required features
+8. Available assets
+9. Visual direction requirements
+10. Technical constraints
+11. Project scope
+12. Open questions and assumptions
+
+The project brief must distinguish confirmed information from unresolved details.
+
+## 14. Readiness Criteria
+
+Discovery is sufficiently complete when:
+
+- The project objective is clear.
+- The brand and product context is understood.
+- The target audience is identified.
+- Essential product information is available.
+- Required pages and features are defined.
+- Visual direction can be established.
+- Major technical constraints are understood.
+- Project scope is agreed upon.
+
+If essential information remains missing, resolve it before proceeding.
+
+## 15. AI Requirements
+
+AI assistants must:
+
+- Review existing project information before asking questions.
+- Avoid asking for information already provided.
+- Ask concise and relevant questions.
+- Never fabricate product or business information.
+- Explain important assumptions.
+- Produce a structured project brief.
+- Obtain clarification when essential requirements are ambiguous.
+- Use the discovery results as the foundation for art direction and implementation.
