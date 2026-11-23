@@ -1,296 +1,319 @@
-# Build Process Guidelines
+# Build Process — Product Catalog Website
 
 ## 1. Purpose
 
-This document defines the development and implementation process for PINTECHRA web projects.
+This document defines the engineering workflow for implementing PINTECHRA product catalog websites.
 
-The objective is to transform approved project requirements and design specifications into reliable, maintainable, secure, and functional websites.
+The goal is to translate approved project requirements and design specifications into a functional, responsive, accessible, secure, and maintainable website.
 
-Implementation must follow the established project scope, design direction, and engineering standards.
+Follow the root `AGENTS.md` and relevant engineering documentation throughout implementation.
 
-## 2. Build Process Overview
+## 2. Development Principles
 
-Follow this general workflow:
+- Understand before implementing.
+- Plan before modifying code.
+- Follow the approved design direction.
+- Keep code organized and maintainable.
+- Prioritize functionality and usability.
+- Avoid unnecessary dependencies and complexity.
+- Test changes before delivery.
+- Never claim unverified functionality works.
 
-1. Review Project Requirements.
-2. Inspect the Existing Environment.
-3. Plan Implementation.
-4. Establish Project Structure.
-5. Set Up Dependencies and Configuration.
-6. Implement Core Layout.
-7. Build Reusable Components.
-8. Implement Page Content.
-9. Develop Functional Features.
-10. Integrate Data and External Services.
-11. Apply Responsive Behavior.
-12. Perform Testing and Refinement.
-13. Prepare Deployment.
+## 3. Phase 1 — Project Inspection
 
-Adapt the workflow to project complexity.
+Before writing code, inspect the existing project.
 
-## 3. Review Project Requirements
+Understand:
 
-Before writing code:
+- Current directory structure
+- Existing files and components
+- Technology stack
+- Dependencies
+- Build and development commands
+- Existing design system
+- Available assets
+- Existing functionality
+- Hosting and deployment constraints
 
-- Review the approved project brief.
-- Review design specifications.
-- Understand functional requirements.
-- Identify required pages and components.
-- Identify technical constraints.
-- Confirm available assets and content.
-- Identify external integrations.
-- Review existing implementation when applicable.
+For existing projects, preserve working functionality unless a change is required.
 
-Do not begin implementation with unresolved critical requirements.
+Do not overwrite or remove important files without understanding their purpose.
 
-## 4. Inspect the Existing Environment
+## 4. Phase 2 — Implementation Planning
 
-For existing projects, inspect:
+Translate the project brief and design handoff into an implementation plan.
 
-- Current directory structure.
-- Framework and programming language.
-- Dependency configuration.
-- Existing components.
-- Routing system.
-- Styling approach.
-- API integrations.
-- Environment configuration.
-- Existing errors or limitations.
+Define:
 
-Do not overwrite or restructure existing code without understanding its purpose.
+- Pages and routes
+- Component hierarchy
+- Data structure
+- Product information model
+- Required functionality
+- Asset requirements
+- API or backend requirements
+- Responsive behavior
+- Testing strategy
 
-## 5. Implementation Planning
+Identify dependencies between tasks.
 
-Create a practical implementation plan.
+Separate essential features from optional improvements.
 
-Identify:
+## 5. Phase 3 — Project Setup
 
-- Required files and modules.
-- Components and page structure.
-- Data requirements.
-- Feature dependencies.
-- Development priorities.
-- Potential risks.
-- Testing requirements.
+Prepare the development environment.
 
-Prioritize essential functionality before optional enhancements.
+Depending on the chosen stack:
 
-## 6. Project Setup
-
-Establish the development environment according to the selected technology.
-
-Requirements:
-
-- Use appropriate project configuration.
-- Install only necessary dependencies.
-- Follow framework conventions.
+- Configure project dependencies.
+- Establish the directory structure.
 - Configure environment variables.
-- Establish consistent scripts and commands.
-- Document setup requirements.
+- Set up development scripts.
+- Establish formatting and linting tools.
+- Configure version control.
+- Prepare required assets.
 
-Avoid unnecessary tooling and configuration complexity.
+Do not expose credentials, API keys, or private configuration in public repositories.
 
-## 7. Implementation Order
+## 6. Phase 4 — Design System Implementation
 
-Implement the project in logical stages.
+Implement the approved design foundation.
 
-### Stage 1 — Foundation
+Establish:
 
-- Project configuration.
-- Base directory structure.
-- Global styles.
-- Design tokens.
-- Typography.
-- Basic routing.
+- Color tokens
+- Typography tokens
+- Spacing scale
+- Layout containers
+- Grid system
+- Border and shadow styles
+- Responsive breakpoints
+- Reusable interaction patterns
 
-### Stage 2 — Shared Interface
+Keep design tokens consistent across the website.
 
-- Navigation.
-- Header.
-- Footer.
-- Containers.
-- Reusable UI components.
+Avoid introducing unrelated visual styles during implementation.
 
-### Stage 3 — Page Implementation
+## 7. Phase 5 — Component Development
 
-- Page layouts.
-- Content sections.
-- Images and visual assets.
-- Responsive composition.
+Build reusable components based on project requirements.
 
-### Stage 4 — Functional Features
+Possible components include:
 
-- Forms.
-- Navigation behavior.
-- Interactive components.
-- Search and filtering when required.
-- Authentication when required.
-- Other project-specific functionality.
+- Header
+- Navigation
+- Footer
+- Product card
+- Product grid
+- Product gallery
+- Product specification table
+- Category navigation
+- Search and filter controls
+- Inquiry buttons
+- Contact form
 
-### Stage 5 — Data Integration
+Not every project needs every component.
 
-- API communication.
-- Database integration when required.
-- External services.
-- Data validation.
-- Loading and error states.
+Keep components focused on clear responsibilities.
 
-### Stage 6 — Refinement
+Avoid unnecessary abstraction for simple features.
 
-- Responsive adjustments.
-- Accessibility improvements.
-- Performance optimization.
-- Visual consistency.
-- Bug fixes.
+## 8. Phase 6 — Page Implementation
 
-Do not implement features that are outside the agreed project scope without approval.
+Implement pages according to the approved information architecture.
 
-## 8. Component Implementation
+Typical pages may include:
 
-Components must follow the established architecture.
+### Home
 
-- Keep responsibilities clear.
-- Reuse components where appropriate.
-- Use meaningful names.
-- Keep component interfaces understandable.
-- Avoid unnecessary duplication.
-- Maintain consistent styling.
-- Support relevant interaction states.
+- Brand introduction
+- Main product highlights
+- Catalog entry point
+- Supporting information
+- Contact action
 
-Do not create excessive abstractions for simple interface elements.
+### Product Catalog
 
-## 9. Functional Implementation
+- Product listing
+- Product categories
+- Search or filtering, if required
+- Product summaries
+- Product detail links
 
-All interactive elements must perform their intended actions.
+### Product Details
 
-Examples:
+- Product overview
+- Images and gallery
+- Features and benefits
+- Technical specifications
+- Availability or status
+- Inquiry action
 
-- Buttons must execute meaningful actions.
-- Navigation links must lead to valid destinations.
-- Forms must validate and handle submissions.
-- Search controls must perform actual searches.
-- Filters must affect displayed results.
-- Interactive menus must open and close correctly.
+### About
 
-Avoid decorative controls that appear functional but do nothing.
+- Brand background
+- Business information
+- Relevant supporting content
 
-## 10. Data and API Integration
+### Contact
 
-External data integration must be reliable.
+- Contact methods
+- Inquiry form, if required
+- Relevant business information
 
-- Use appropriate API communication patterns.
-- Validate received data.
-- Handle network errors.
-- Provide loading and error states.
-- Avoid exposing sensitive credentials.
-- Keep API logic organized.
-- Avoid unnecessary requests.
-- Respect external service limitations.
+Adapt page structure to actual project scope.
 
-Never assume that an external service is always available.
+## 9. Phase 7 — Product Data Integration
 
-## 11. Responsive Implementation
+Determine how product information will be managed.
 
-Implement responsive behavior according to the approved design.
+Possible approaches:
 
-Verify:
+- Static data files
+- Local JSON
+- CMS
+- Backend API
+- Database
 
-- Mobile layouts.
-- Tablet layouts.
-- Desktop layouts.
-- Navigation behavior.
-- Component resizing.
-- Content reflow.
-- Touch interactions.
-- Horizontal overflow.
+Choose the simplest approach that satisfies current and expected requirements.
 
-Responsive behavior must be tested rather than assumed.
+Ensure:
 
-## 12. Security During Development
+- Product information is consistent.
+- Data is validated.
+- Missing information is handled clearly.
+- Images have appropriate alternatives.
+- Unverified specifications are not displayed as facts.
 
-Apply security practices throughout implementation.
+Do not introduce a database or backend when static data is sufficient.
 
-- Protect sensitive information.
-- Validate untrusted input.
-- Avoid unsafe HTML injection.
-- Use secure authentication practices.
-- Apply appropriate authorization checks.
-- Avoid exposing internal errors.
-- Review dependencies.
-- Follow secure configuration practices.
+## 10. Phase 8 — Feature Implementation
 
-Never commit secrets or credentials to the repository.
+Implement required functionality.
 
-## 13. Code Quality
+Possible features:
 
-Maintain code quality during development.
+- Product search
+- Category filtering
+- Product sorting
+- Product image gallery
+- Product comparison
+- Inquiry forms
+- WhatsApp contact links
+- External purchasing links
 
-- Follow established coding conventions.
-- Keep functions focused.
-- Remove unused code.
-- Avoid unnecessary complexity.
-- Handle errors explicitly.
-- Maintain clear module boundaries.
-- Update documentation when needed.
+Validate user input and handle errors appropriately.
 
-Refer to the Code Standards and Frontend Architecture guidelines.
+Do not implement optional features without a clear project requirement.
 
-## 14. Testing During Development
+## 11. Phase 9 — Responsive Implementation
 
-Test important functionality throughout implementation.
+Ensure the website adapts to:
 
-Perform checks for:
+- Mobile phones
+- Tablets
+- Laptops
+- Desktop screens
 
-- Build errors.
-- Runtime errors.
-- Broken routes.
-- Component behavior.
-- Form validation.
-- API integration.
-- Responsive layouts.
-- Accessibility.
-- Performance.
+Test:
 
-Do not postpone all testing until the project is finished.
+- Navigation
+- Product grids
+- Product images
+- Typography
+- Spacing
+- Forms
+- Interactive controls
+- Content overflow
 
-## 15. AI Development Requirements
+Use responsive layouts rather than simply scaling down desktop designs.
 
-AI coding agents must:
+## 12. Phase 10 — Integration and Refinement
 
-1. Understand the project before editing.
-2. Follow approved design specifications.
-3. Inspect existing code before making changes.
-4. Explain significant implementation decisions.
-5. Avoid unnecessary dependencies.
-6. Preserve existing functionality.
-7. Implement functional interactions.
-8. Handle errors and edge cases.
-9. Verify changes using available tools.
-10. Clearly report untested functionality.
-11. Never invent test results.
-12. Avoid claiming completion when important requirements remain unfinished.
+Verify that all components and pages work together.
 
-When a task is large, implement it in manageable stages.
+Review:
 
-## 16. Build Quality Checklist
+- Navigation and routing
+- Product data
+- Image loading
+- Internal links
+- External links
+- Contact methods
+- Interactive states
+- Error handling
+- Visual consistency
 
-- [ ] Requirements have been reviewed.
-- [ ] Existing environment has been inspected.
-- [ ] Implementation plan is clear.
-- [ ] Project structure is appropriate.
-- [ ] Dependencies are justified.
-- [ ] Design specifications are followed.
-- [ ] Components are organized.
-- [ ] Interactive elements work.
-- [ ] Data integration is handled correctly.
-- [ ] Security practices are applied.
-- [ ] Responsive behavior is implemented.
-- [ ] Errors and edge cases are considered.
-- [ ] Relevant tests have been performed.
-- [ ] Documentation is updated when needed.
+Refine spacing, alignment, typography, and interactions.
 
-## 17. Final Principle
+## 13. Phase 11 — Testing
 
-Building a website is not simply writing code until a page appears.
+Perform appropriate testing before delivery.
 
-A successful implementation translates requirements and design decisions into a reliable, functional, maintainable, and user-centered digital product.
+Check:
+
+- Main user flows
+- Product browsing
+- Product detail access
+- Search and filtering, if implemented
+- Forms and contact actions
+- Responsive behavior
+- Accessibility
+- Performance
+- SEO fundamentals
+- Security
+- Browser compatibility
+
+Use automated tests where appropriate.
+
+Do not claim tests passed unless they were actually executed.
+
+## 14. Phase 12 — Deployment Preparation
+
+Before deployment:
+
+- Verify production build.
+- Check environment configuration.
+- Confirm asset paths.
+- Verify metadata.
+- Check routing behavior.
+- Remove unintended debug output.
+- Review security-sensitive settings.
+- Confirm hosting compatibility.
+
+Deployment must follow the project's hosting requirements.
+
+Do not deploy without authorization.
+
+## 15. Phase 13 — Delivery
+
+Provide a clear implementation report containing:
+
+1. Completed pages
+2. Implemented features
+3. Important technical decisions
+4. Project structure overview
+5. How to run the project
+6. Testing performed and results
+7. Known limitations
+8. Recommended next improvements
+
+Include relevant commands and configuration instructions.
+
+## 16. AI Engineering Requirements
+
+AI assistants must:
+
+- Inspect the existing codebase before modifying it.
+- Identify affected files before implementation.
+- Explain significant architectural decisions.
+- Preserve unrelated functionality.
+- Avoid unnecessary rewrites.
+- Follow the documented standards.
+- Validate changes with appropriate tests.
+- Report errors honestly.
+- Never invent test results or deployment status.
+
+For multi-step tasks, implement and verify changes incrementally.
+
+The final implementation must reflect the approved requirements and design direction.
