@@ -1,107 +1,147 @@
-# PINTECHRA Web Standard
+# PINTECHRA Product Catalog Web Standard
 
-**A reusable design and engineering standard for building professional web experiences.**
+A practical design and engineering standard for building high-quality product catalog websites.
 
-PINTECHRA Web Standard is a centralized guideline for designing, developing, and maintaining high-quality websites across different project types.
+## Overview
 
-It establishes a consistent approach to visual design, user experience, frontend engineering, accessibility, performance, and project workflows.
+This repository contains guidelines, workflows, and AI instructions for designing and developing product catalog websites.
 
----
+The goal is to establish a consistent development process that produces websites that are visually distinctive, user-friendly, accessible, responsive, and technically reliable.
+
+These standards are primarily intended for PINTECHRA product catalog projects.
 
 ## Vision
 
-Build digital experiences that combine thoughtful design, reliable engineering, and meaningful user experiences.
+Build product catalog websites that:
 
-## Core Philosophy
+- Present products clearly and professionally.
+- Communicate product value and important information.
+- Create a strong and consistent brand impression.
+- Provide an intuitive browsing experience.
+- Maintain high design and engineering quality.
+- Support future product and business growth.
 
-- Concept before execution.
-- Design with purpose.
-- Functionality before decoration.
-- Consistency across every interface.
-- Maintainability over unnecessary complexity.
-- Quality over speed.
+## Core Principles
+
+### 1. Purposeful Design
+
+Every visual decision must serve a clear purpose.
+
+Avoid unnecessary decoration and generic design patterns.
+
+### 2. Strong Visual Identity
+
+Establish a distinct art direction based on the brand, product, and target audience.
+
+### 3. User-Centered Experience
+
+Make product discovery, information access, and customer inquiries simple.
+
+### 4. Engineering Quality
+
+Prioritize clean code, maintainability, accessibility, performance, and security.
+
+### 5. Accurate Product Information
+
+Never invent product specifications, prices, certifications, testimonials, or business claims.
+
+### 6. Continuous Improvement
+
+Review, test, and refine the website before delivery.
 
 ## Design Direction
 
-Our preferred visual language is **Neumorphism**, applied selectively and intentionally.
+The preferred visual direction emphasizes:
 
-It is not a mandatory visual style. Every project must have its own art direction based on its audience, purpose, and requirements.
+- Clear visual hierarchy
+- Typography-led composition
+- Disciplined layouts and spacing
+- Intentional color systems
+- Consistent components
+- Purposeful interactions
 
-We prioritize:
+Neumorphism is a preferred visual reference, but it must be applied selectively.
 
-- Strong visual hierarchy.
-- Purposeful typography.
-- Consistent spacing and layout.
-- Balanced color systems.
-- Clear interaction patterns.
-- Accessibility and readability.
+It is not mandatory for every project.
 
-## Project Coverage
+Avoid:
 
-This standard can be applied to:
+- Random gradients and decorative orbs
+- Excessive shadows and rounded cards
+- Unnecessary animations
+- Generic AI-generated layouts
+- Visual elements without a clear purpose
 
-- Personal portfolios.
-- Product catalogs.
-- Landing pages.
-- Company profiles.
-- E-commerce websites.
-- Admin dashboards.
-- Web applications.
-
-## Repository Structure
+## Documentation Structure
 
 ```text
 pintechra-web-standard/
 ├── README.md
 ├── AGENTS.md
-├── CONTRIBUTING.md
-├── LICENSE
 ├── design/
 ├── engineering/
-├── workflow/
 ├── prompts/
-└── examples/
+│   └── PRODUCT-CATALOG.md
+└── workflow/
 ```
 
-## Documentation
+### Design
 
-| Directory | Purpose |
-|---|---|
-| `design/` | Visual design principles and art direction |
-| `engineering/` | Frontend architecture and technical standards |
-| `workflow/` | Project planning, design, development, and QA |
-| `prompts/` | Reusable AI project instructions |
-| `examples/` | Design and implementation references |
+Guidelines for visual identity, art direction, typography, colors, layouts, and components.
+
+### Engineering
+
+Guidelines for frontend architecture, code quality, responsiveness, accessibility, performance, and SEO.
+
+### Prompts
+
+Project-specific instructions for AI-assisted product catalog development.
+
+### Workflow
+
+Standard procedures for project discovery, design, implementation, and quality assurance.
 
 ## AI Collaboration
 
-This repository is designed to support AI-assisted development.
+AI tools working on projects based on this repository should:
 
-AI tools should follow the project guidelines, understand requirements before implementation, explain important decisions, and evaluate the quality of their output.
+1. Read `AGENTS.md` before starting.
+2. Understand the project requirements.
+3. Identify missing information.
+4. Establish a creative concept and art direction.
+5. Plan the website structure.
+6. Implement the design and functionality.
+7. Perform quality assurance.
+8. Explain the final implementation and known limitations.
 
-See [AGENTS.md](./AGENTS.md) for the primary AI engineering instructions.
-
-Different AI tools may require additional platform-specific configuration.
+Do not begin implementation before understanding the project requirements.
 
 ## Documentation Language
 
-- Primary documentation: English.
-- Learning explanations and owner guidance: Indonesian when needed.
+- Technical documentation: English.
+- Learning explanations and user communication: Indonesian.
+- Code identifiers: English.
+- Commit messages: English.
 
-## Project Principles
+## Quality Expectations
 
-We do not aim to produce websites that merely look attractive.
+Every delivered website should be:
 
-We aim to build websites that are:
+- Visually coherent
+- Responsive across devices
+- Accessible
+- Fast and efficient
+- Secure
+- SEO-friendly
+- Maintainable
+- Functionally tested
 
-- Functional.
-- Usable.
-- Visually coherent.
-- Responsive.
-- Accessible.
-- Performant.
-- Maintainable.
+## Project Status
+
+This repository is the evolving foundation for PINTECHRA product catalog development.
+
+Guidelines may be refined as new requirements, technologies, and lessons emerge.
 
 ---
 
-**PINTECHRA — Precision in Design. Excellence in Engineering.**
+**PINTECHRA — Design with Purpose. Build with Precision.**
