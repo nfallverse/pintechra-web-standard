@@ -1,265 +1,292 @@
-# Design Process Guidelines
+# Design Process — Product Catalog Website
 
 ## 1. Purpose
 
-This document defines the design process for PINTECHRA web development projects.
+This document defines the design workflow for PINTECHRA product catalog websites.
 
-The objective is to transform project requirements into a clear, functional, distinctive, and implementation-ready design.
+The goal is to create a clear, distinctive, and user-centered product catalog experience through a structured design process.
 
-Design must be based on the project brief, user needs, and established art direction.
+Design decisions must be based on the brand, products, target audience, and project objectives.
 
-## 2. Design Process Overview
+## 2. Design Principles
 
-Follow this general workflow:
+- Concept before decoration.
+- Clarity before complexity.
+- Product information before visual effects.
+- Consistency across all pages and components.
+- Accessibility as part of the design process.
+- Visual identity must support the brand.
+- Every design decision must have a clear purpose.
 
-1. Review Project Brief.
-2. Define Design Objectives.
-3. Develop Creative Concept.
-4. Establish Art Direction.
-5. Create Information Architecture.
-6. Develop Wireframes.
-7. Create Visual Design.
-8. Define Responsive Behavior.
-9. Validate Design.
-10. Prepare Design Handoff.
+Do not begin detailed visual design without understanding the project requirements.
 
-Adapt the process to the project's complexity.
+## 3. Phase 1 — Review the Project Brief
 
-Small projects may combine several stages when appropriate.
+Review the discovery deliverables in `workflow/PROJECT-DISCOVERY.md`.
 
-## 3. Review Project Brief
+Understand:
 
-Before designing:
+- Brand identity
+- Product characteristics
+- Target audience
+- Website objectives
+- Product information
+- Required pages and features
+- Available visual assets
+- Technical constraints
 
-- Understand the project objectives.
-- Identify target users.
-- Review functional requirements.
-- Understand content requirements.
-- Identify technical constraints.
-- Review existing brand guidelines.
-- Confirm project scope.
+Identify missing information before continuing.
 
-Do not design based on assumptions that could significantly affect the result.
+## 4. Phase 2 — Creative Concept
 
-## 4. Define Design Objectives
+Develop a clear creative concept for the catalog.
 
-Establish what the design needs to achieve.
+Define:
 
-Consider:
+- Concept name
+- Main creative idea
+- Brand personality
+- Desired audience impression
+- Visual references
+- Design rationale
 
-- Usability.
-- Brand recognition.
-- Content clarity.
-- Visual differentiation.
-- Conversion goals when relevant.
-- Accessibility.
-- Responsive behavior.
+The concept should explain why the proposed visual direction is appropriate for the brand and products.
 
-Design objectives must support the project's actual purpose.
+Avoid generic concepts that could be applied to any business without modification.
 
-## 5. Develop Creative Concept
+## 5. Phase 3 — Art Direction
 
-Create a clear creative concept before detailed visual design.
+Translate the creative concept into a visual direction.
 
-The concept should explain:
+Establish:
 
-- The central creative idea.
-- Visual personality.
-- Design rationale.
-- Emotional impression.
-- Relationship to the brand.
-- How the concept supports user needs.
+### Typography
 
-Avoid generic concepts that lack a connection to the project.
+- Primary typeface
+- Secondary typeface, if needed
+- Heading hierarchy
+- Body text style
+- Product specification typography
 
-## 6. Establish Art Direction
+### Color System
 
-Define the project's visual language.
+- Primary color
+- Secondary color
+- Accent color
+- Background and surface colors
+- Text colors
+- Border colors
+- Semantic colors
 
-Document:
+### Layout
 
-- Typography.
-- Color palette.
-- Layout and composition.
-- Grid system.
-- Image direction.
-- Iconography.
-- Visual assets.
-- Surface treatments.
-- Motion and interaction style.
+- Content width
+- Grid system
+- Spacing scale
+- Alignment
+- Visual hierarchy
+- Responsive behavior
 
-Refer to the Art Direction and Design Philosophy guidelines.
+### Imagery
 
-Neumorphism may be used when appropriate, but it is not mandatory.
+- Product photography style
+- Image proportions
+- Background treatment
+- Image gallery presentation
+- Supporting visual assets
 
-## 7. Information Architecture
+### Interaction
 
-Organize the website's information before designing individual pages.
+- Button behavior
+- Hover states
+- Focus states
+- Transitions
+- Feedback states
 
-Identify:
+Document the decisions in a concise art direction specification.
 
-- Main pages.
-- Navigation structure.
-- Content hierarchy.
-- Page relationships.
-- User journeys.
-- Important calls to action.
+Refer to `design/ART-DIRECTION.md` for detailed guidance.
 
-Keep navigation understandable and avoid unnecessary complexity.
+## 6. Phase 4 — Information Architecture
 
-## 8. Wireframing
-
-Create wireframes to define structure and content hierarchy.
-
-Wireframes should communicate:
-
-- Page sections.
-- Content placement.
-- Navigation.
-- Component relationships.
-- Primary interactions.
-- Responsive layout considerations.
-
-Focus on structure and usability before detailed decoration.
-
-Do not spend unnecessary time polishing wireframes.
-
-## 9. Visual Design
-
-Translate approved wireframes into a complete visual interface.
-
-Requirements:
-
-- Follow the established art direction.
-- Apply consistent typography.
-- Use the defined color system.
-- Maintain intentional spacing.
-- Establish clear visual hierarchy.
-- Use components consistently.
-- Apply visual effects with restraint.
-- Preserve content readability.
-
-Every visual decision should have a purpose.
-
-## 10. Responsive Design
-
-Define how the design adapts to different screen sizes.
+Define how visitors navigate the catalog.
 
 Consider:
 
-- Mobile layouts.
-- Tablet layouts.
-- Desktop layouts.
-- Navigation changes.
-- Content reflow.
-- Typography scaling.
-- Image behavior.
-- Touch interactions.
+- Main navigation
+- Product categories
+- Product listing structure
+- Product detail structure
+- Brand information
+- Contact and inquiry paths
 
-Do not treat mobile as a simple compressed desktop layout.
+Create a sitemap or page hierarchy.
 
-Refer to the Responsive Design guidelines.
+Keep navigation intuitive and avoid unnecessary pages.
 
-## 11. Interaction and Motion Design
+## 7. Phase 5 — Content Structure
 
-Define important interface states and behaviors.
+Define the information required on each page.
 
-Consider:
+For product listings, consider:
 
-- Default states.
-- Hover states.
-- Focus states.
-- Active states.
-- Disabled states.
-- Loading states.
-- Success states.
-- Error states.
-- Transitions and micro-interactions.
+- Product image
+- Product name
+- Short description
+- Relevant category
+- Availability or status, if applicable
+- Product detail link
 
-Motion should support usability and reinforce the visual identity.
+For product detail pages, consider:
 
-## 12. Design Validation
+- Product overview
+- Main benefits
+- Features
+- Technical specifications
+- Product gallery
+- Variants
+- Price or inquiry information, if provided
+- Contact action
 
-Review the design before implementation.
+Use only verified information.
+
+Prioritize important product information and avoid overwhelming visitors with unnecessary content.
+
+## 8. Phase 6 — Wireframing
+
+Create low-fidelity layouts before detailed visual design.
+
+Define:
+
+- Header and navigation
+- Hero or catalog introduction
+- Product listing
+- Product detail sections
+- Supporting content
+- Contact section
+- Footer
+
+Focus on information hierarchy, content flow, and usability.
+
+Do not spend time on decorative details during this phase.
+
+## 9. Phase 7 — Visual Design
+
+Apply the approved art direction to the wireframes.
+
+Refine:
+
+- Typography
+- Colors
+- Spacing
+- Grid and alignment
+- Product imagery
+- Components
+- Borders and shadows
+- Interaction states
+
+Maintain consistency across all pages.
+
+Neumorphism may be used selectively when appropriate to the concept and usability requirements.
+
+Do not force Neumorphism into components where it reduces clarity or accessibility.
+
+## 10. Phase 8 — Responsive Design
+
+Define how the catalog adapts to:
+
+- Mobile phones
+- Tablets
+- Laptops
+- Desktop screens
+
+Review:
+
+- Navigation behavior
+- Product grid columns
+- Image scaling
+- Typography
+- Spacing
+- Buttons and touch targets
+- Content readability
+
+Avoid simply shrinking desktop layouts.
+
+Adapt the composition to each screen size.
+
+## 11. Phase 9 — Design Validation
+
+Review the proposed design before implementation.
 
 Evaluate:
 
-### Visual Quality
-- Is the concept distinctive?
-- Is the visual hierarchy clear?
-- Is typography appropriate?
-- Is the composition balanced?
-- Are colors consistent?
-- Are visual effects justified?
+- Brand consistency
+- Product presentation
+- Visual hierarchy
+- Content clarity
+- Navigation usability
+- Responsive behavior
+- Accessibility
+- Component consistency
+- Image quality
+- Overall visual quality
 
-### Usability
-- Is navigation understandable?
-- Are important actions easy to find?
-- Is content readable?
-- Are interactions predictable?
+Identify and resolve important design problems.
 
-### Accessibility
-- Is contrast sufficient?
-- Are controls identifiable?
-- Is keyboard interaction considered?
-- Is motion handled appropriately?
+## 12. Phase 10 — Design Handoff
 
-### Responsiveness
-- Does the layout adapt naturally?
-- Does content remain accessible?
-- Are important interactions preserved?
+Prepare implementation-ready design documentation.
 
-## 13. Design Handoff
+Include:
 
-Prepare the information needed for implementation.
+- Approved creative concept
+- Art direction specification
+- Sitemap
+- Page structure
+- Wireframes
+- Design references
+- Typography and color tokens
+- Component specifications
+- Responsive behavior
+- Interaction states
+- Asset requirements
 
-Provide:
+Clearly communicate design decisions and unresolved details.
 
-1. Approved project brief.
-2. Creative concept.
-3. Art direction specification.
-4. Page structure.
-5. Wireframes or visual references.
-6. Typography and color tokens.
-7. Component specifications.
-8. Responsive behavior.
-9. Interaction details.
-10. Asset requirements.
+## 13. Design Deliverables
 
-Explain any important design decisions or implementation constraints.
+Before implementation begins, the design phase should produce:
 
-## 14. AI Design Requirements
+1. Project brief reference
+2. Creative concept
+3. Art direction specification
+4. Sitemap
+5. Page and content structure
+6. Wireframes
+7. Visual design
+8. Responsive specifications
+9. Component and interaction specifications
+10. Design handoff notes
 
-AI agents must:
+Deliverables should match the project's actual complexity.
 
-1. Review the project brief before designing.
-2. Identify missing critical information.
-3. Establish a project-specific creative concept.
-4. Define art direction before detailed implementation.
-5. Consider usability and accessibility.
-6. Design for relevant screen sizes.
-7. Avoid generic AI-generated visual patterns.
-8. Explain significant design decisions.
-9. Validate the design against project objectives.
-10. Avoid beginning full implementation before essential design decisions are clear.
+Not every project requires a separate high-fidelity design file.
 
-## 15. Design Quality Checklist
+## 14. AI Requirements
 
-- [ ] Project brief has been reviewed.
-- [ ] Design objectives are defined.
-- [ ] Creative concept is established.
-- [ ] Art direction is documented.
-- [ ] Information architecture is clear.
-- [ ] Wireframes are prepared when needed.
-- [ ] Visual design follows the concept.
-- [ ] Responsive behavior is considered.
-- [ ] Interactions are defined.
-- [ ] Accessibility has been considered.
-- [ ] Design has been validated.
-- [ ] Implementation handoff is prepared.
+AI assistants must:
 
-## 16. Final Principle
+- Understand the project before proposing visuals.
+- Establish a project-specific creative concept.
+- Explain the reasoning behind design decisions.
+- Avoid generic AI-generated aesthetics.
+- Prioritize product clarity and usability.
+- Keep the design consistent across pages.
+- Consider responsive behavior from the beginning.
+- Validate accessibility during design.
+- Avoid unnecessary visual complexity.
+- Prepare clear specifications for implementation.
 
-Good design is not decoration added after development.
+Never treat the first visual proposal as automatically final.
 
-It is a deliberate process of translating project goals and user needs into a meaningful visual and interactive experience.
+Refine the design based on project requirements and feedback.
