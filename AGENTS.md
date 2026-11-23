@@ -1,128 +1,280 @@
-# PINTECHRA — AI Engineering Instructions
+# AI Engineering Instructions — PINTECHRA Product Catalog
 
 ## 1. Project Identity
 
-PINTECHRA is a technology-oriented brand focused on building professional digital products and web experiences.
+This repository defines the design, engineering, and workflow standards for PINTECHRA product catalog websites.
 
-All projects must reflect:
-- Professional engineering standards.
-- Purposeful visual design.
-- Strong usability.
-- Maintainable code.
-- Consistent brand identity.
+Your responsibility is to help design, build, test, and maintain product catalog websites that meet the standards documented in this repository.
 
-## 2. Core Principles
+The objective is not simply to produce a working website, but to deliver a professional, distinctive, usable, and maintainable digital product.
 
-- Understand the project before writing code.
-- Plan before implementation.
-- Prioritize usability over decoration.
-- Every design decision must have a clear purpose.
-- Prefer clarity, consistency, and simplicity.
-- Never generate generic AI-looking designs.
-- Do not add unnecessary components or effects.
+## 2. Mandatory Documentation
 
-## 3. Design Philosophy
+Before starting any project:
 
-Use a concept-first design approach.
+1. Read this `AGENTS.md`.
+2. Read the root `README.md`.
+3. Read `prompts/PRODUCT-CATALOG.md`.
+4. Review relevant documents in `design/`, `engineering/`, and `workflow/`.
 
-Neumorphism is a preferred visual direction, not a mandatory style.
+Do not ignore relevant documentation.
 
-Use it only when it improves the experience.
+If project requirements conflict with these standards, identify the conflict and clarify it before proceeding.
 
-Maintain:
-- Clear visual hierarchy.
-- Readable typography.
-- Appropriate contrast.
-- Consistent spacing.
-- Intentional composition.
-- Accessible interactions.
+## 3. Core Principles
+
+### Design with Purpose
+
+Every visual element must have a clear reason to exist.
+
+Prioritize clarity, hierarchy, composition, and usability over decoration.
+
+### Brand Consistency
+
+Understand the brand identity and product characteristics before establishing the visual direction.
+
+Do not apply the same visual style to every project without considering its context.
+
+### User-Centered Experience
+
+Make product discovery, product information, and customer inquiries straightforward.
+
+### Engineering Quality
+
+Write clean, maintainable, accessible, responsive, and efficient code.
+
+### Accuracy
+
+Never invent product specifications, prices, certifications, testimonials, customer reviews, or business claims.
+
+Use only verified project information.
+
+Clearly identify assumptions and missing information.
+
+## 4. Project Workflow
+
+Follow this sequence for every project:
+
+### Phase 1 — Discovery
+
+Understand:
+
+- Brand identity
+- Product information
+- Target audience
+- Website objectives
+- Required pages and features
+- Available assets
+- Technical constraints
+
+Ask focused questions when essential information is missing.
+
+### Phase 2 — Creative Direction
+
+Establish:
+
+- Creative concept
+- Visual identity
+- Typography
+- Color palette
+- Layout direction
+- Image treatment
+- Interaction principles
+
+Explain the reasoning behind important design decisions.
+
+### Phase 3 — Structure and Planning
+
+Define:
+
+- Information architecture
+- Page structure
+- Component hierarchy
+- Content requirements
+- Technical architecture
+- Implementation plan
+
+### Phase 4 — Implementation
+
+Build the website according to the approved direction.
+
+Prioritize:
+
+- Reusable components
+- Consistent design tokens
+- Responsive layouts
+- Semantic HTML
+- Maintainable code
+- Appropriate performance
+
+### Phase 5 — Quality Assurance
+
+Test functionality, visual consistency, responsiveness, accessibility, performance, SEO, and security.
+
+Fix important issues before delivery.
+
+### Phase 6 — Delivery
+
+Provide:
+
+- Summary of completed work
+- Implemented features
+- Technical decisions
+- Known limitations
+- Instructions for running and maintaining the project
+
+## 5. Design Standards
+
+Follow the documentation in `design/`.
+
+Important principles:
+
+- Establish art direction before detailed implementation.
+- Use typography to create a clear hierarchy.
+- Maintain disciplined spacing and alignment.
+- Use colors intentionally.
+- Build consistent components.
+- Keep layouts visually balanced.
+- Use motion only when it improves the experience.
+
+Neumorphism is a preferred visual reference, not a mandatory requirement.
+
+Apply it selectively and preserve usability and accessibility.
 
 Avoid:
-- Unnecessary gradients.
-- Random decorative orbs.
-- Excessive rounded cards.
-- Arbitrary shadows.
-- Repetitive layouts.
-- Decorative elements without purpose.
 
-## 4. Engineering Standards
+- Random gradients and decorative orbs
+- Excessive shadows
+- Unnecessary rounded cards
+- Generic AI-generated layouts
+- Uncontrolled visual effects
+- Unnecessary animations
+- Decorative elements without purpose
 
-- Write clean, readable, maintainable code.
-- Use reusable components when appropriate.
-- Keep project structure organized.
-- Avoid unnecessary dependencies.
-- Follow established language and framework conventions.
+## 6. Engineering Standards
+
+Follow the documentation in `engineering/`.
+
+Requirements:
+
+- Use semantic and maintainable code.
+- Follow consistent naming conventions.
+- Build reusable components where appropriate.
+- Separate concerns and responsibilities.
 - Handle errors properly.
-- Never expose secrets, API keys, or credentials.
-
-## 5. Responsive Design
-
-Every website must work across:
-- Mobile phones.
-- Tablets.
-- Laptops.
-- Desktop screens.
-
-Do not simply shrink desktop layouts. Adapt the experience to each screen size.
-
-## 6. Accessibility
-
-- Use semantic HTML.
-- Provide accessible labels.
-- Maintain sufficient color contrast.
-- Support keyboard navigation.
-- Make interactive elements understandable.
-
-## 7. Performance
-
+- Validate user input.
+- Protect sensitive information.
+- Avoid unnecessary dependencies.
 - Optimize images and assets.
-- Avoid unnecessary JavaScript.
-- Minimize excessive dependencies.
-- Consider loading performance.
-- Avoid inefficient rendering patterns.
+- Support responsive layouts.
+- Consider accessibility from the beginning.
 
-## 8. Required Workflow
+Choose the technology stack based on project requirements.
 
-Follow this process:
+Do not introduce unnecessary frameworks or complexity.
 
-1. Project discovery and requirements.
-2. Research and references.
-3. Art direction and design concept.
-4. Information architecture and wireframe.
-5. UI design exploration.
-6. Technical planning.
-7. Implementation.
-8. Testing and quality assurance.
-9. Final review.
+## 7. Product Catalog Requirements
 
-Do not skip planning and design exploration for substantial projects.
+A product catalog should help visitors understand products and make informed decisions.
 
-## 9. AI Collaboration
+Depending on project requirements, support:
 
-Before implementing substantial features:
+- Product listing
+- Product details
+- Product specifications
+- Product images
+- Product categories
+- Search and filtering
+- Contact or inquiry actions
 
-- Explain the proposed approach.
-- Identify important assumptions.
-- Explain significant design decisions.
-- Ask for clarification when essential requirements are missing.
-- Do not silently change established project decisions.
+Do not implement features that the project does not need.
 
-When reviewing work, be critical and explain problems with practical solutions.
+Product content must remain accurate and consistent.
 
-## 10. Language
+Never present prototypes or work in progress as finished commercial products unless explicitly confirmed.
 
-- Write technical documentation in English.
-- Explain technical concepts to the project owner in Indonesian when requested.
-- Keep code, naming conventions, and technical terminology consistent.
+## 8. Responsive Design
 
-## 11. Final Quality Standard
+The website must work across:
 
-A project is not complete merely because it runs.
+- Mobile phones
+- Tablets
+- Laptops
+- Desktop screens
 
-It must also be:
-- Functional.
-- Visually coherent.
-- Responsive.
-- Accessible.
-- Maintainable.
-- Properly tested.
+Use mobile-first principles where appropriate.
+
+Prevent horizontal overflow, unreadable text, broken layouts, and inaccessible controls.
+
+## 9. Accessibility
+
+Target WCAG 2.2 Level AA where practical.
+
+Ensure:
+
+- Keyboard accessibility
+- Appropriate color contrast
+- Semantic structure
+- Accessible forms
+- Meaningful image alternatives
+- Visible focus indicators
+- Clear interaction states
+
+Do not rely on color alone to communicate information.
+
+## 10. Performance and SEO
+
+Optimize:
+
+- Image formats and dimensions
+- Asset loading
+- CSS and JavaScript
+- Font loading
+- Rendering performance
+- Metadata
+- Heading hierarchy
+- Page structure
+- Search engine discoverability
+
+Avoid unnecessary scripts and third-party dependencies.
+
+## 11. AI Collaboration Rules
+
+When working with the user:
+
+- Explain important decisions clearly.
+- Use Indonesian for user-facing explanations unless requested otherwise.
+- Keep technical documentation in English.
+- Prefer step-by-step guidance for complex tasks.
+- Do not assume the user has completed a step without confirmation.
+- Identify the exact file and location when suggesting code changes.
+- Avoid changing unrelated files.
+- Explain potential consequences before destructive changes.
+
+When working with an existing codebase:
+
+1. Inspect the current implementation.
+2. Understand existing dependencies and architecture.
+3. Identify the affected files.
+4. Plan the changes.
+5. Implement only the necessary modifications.
+6. Test the result.
+
+Never claim that code has been tested, deployed, or completed unless it actually has been.
+
+## 12. Final Quality Standard
+
+A project is ready for delivery only when:
+
+- Requirements have been addressed.
+- Product information is accurate.
+- Main functionality works.
+- Design is consistent.
+- Responsive behavior has been checked.
+- Accessibility has been considered.
+- Performance is acceptable.
+- SEO fundamentals are implemented.
+- No critical errors remain.
+- Known limitations are documented.
+
+**PINTECHRA — Design with Purpose. Build with Precision.**
