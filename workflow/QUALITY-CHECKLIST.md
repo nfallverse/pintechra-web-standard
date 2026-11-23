@@ -1,269 +1,223 @@
-# Website Quality Checklist
+# Quality Checklist — Product Catalog Website
 
 ## 1. Purpose
 
-This document defines the quality assurance standards for PINTECHRA web projects.
+This document defines the quality assurance checklist for PINTECHRA product catalog websites.
 
-The objective is to ensure that every website is reviewed for functionality, visual quality, usability, accessibility, responsiveness, performance, security, and maintainability before release.
+The purpose is to verify that the website meets its functional, visual, technical, and user experience requirements before delivery or deployment.
 
-A project must be evaluated against its actual requirements.
+Do not mark an item as complete unless it has actually been checked.
 
-## 2. Quality Assurance Principles
+## 2. Project Requirements
 
-- Test before claiming completion.
-- Verify functionality, not just appearance.
-- Evaluate real user experiences.
-- Identify and document known limitations.
-- Prioritize critical issues.
-- Preserve project requirements.
-- Use measurable evidence where possible.
-- Never claim tests were passed without performing them.
+- [ ] Project requirements have been reviewed.
+- [ ] Website objectives are clearly defined.
+- [ ] Required pages are implemented.
+- [ ] Required features are implemented.
+- [ ] Project scope has been respected.
+- [ ] Known limitations are documented.
 
-## 3. Functional Testing
+## 3. Product Information
 
-Verify that all required features work correctly.
+- [ ] Product names are accurate.
+- [ ] Product descriptions are verified.
+- [ ] Product specifications are correct.
+- [ ] Product images represent the actual products.
+- [ ] Product categories are consistent.
+- [ ] Product variants are accurate, if applicable.
+- [ ] Pricing information is accurate, if displayed.
+- [ ] Product availability or status is accurate.
+- [ ] Prototype and development status are clearly communicated.
+- [ ] No fabricated claims or testimonials are present.
 
-- [ ] All required pages load.
-- [ ] Navigation links work.
-- [ ] Buttons perform their intended actions.
-- [ ] Forms accept valid input.
-- [ ] Form validation works correctly.
-- [ ] Search functionality works when required.
-- [ ] Filters work when required.
-- [ ] Interactive components behave correctly.
-- [ ] API integrations work when required.
-- [ ] Loading states are handled.
-- [ ] Error states are handled.
-- [ ] Empty states are handled.
-- [ ] No critical runtime errors remain.
+## 4. Visual Quality
 
-## 4. Visual Quality Review
-
-Evaluate the website against its approved design direction.
-
-- [ ] Visual concept is consistent.
+- [ ] Design follows the approved art direction.
+- [ ] Brand identity is consistent.
 - [ ] Typography hierarchy is clear.
-- [ ] Color usage is consistent.
-- [ ] Layout and spacing are intentional.
-- [ ] Alignment is consistent.
+- [ ] Colors are used consistently.
+- [ ] Spacing and alignment are balanced.
+- [ ] Product images are presented clearly.
+- [ ] Product information is easy to scan.
 - [ ] Components have consistent styling.
-- [ ] Images and assets are appropriate.
-- [ ] Visual effects serve a purpose.
-- [ ] No unnecessary decorative elements exist.
-- [ ] No obvious visual defects remain.
+- [ ] Decorative elements serve a clear purpose.
+- [ ] No unintended placeholder content remains.
 
-## 5. Responsive Testing
+## 5. Functional Quality
 
-Verify the website across relevant viewport sizes.
+- [ ] Main navigation works.
+- [ ] Product listing loads correctly.
+- [ ] Product detail pages open correctly.
+- [ ] Product images load correctly.
+- [ ] Search works, if implemented.
+- [ ] Filtering works, if implemented.
+- [ ] Sorting works, if implemented.
+- [ ] Product comparison works, if implemented.
+- [ ] Inquiry forms work, if implemented.
+- [ ] WhatsApp or external contact links work.
+- [ ] Error and empty states are handled appropriately.
+- [ ] No broken internal links remain.
 
-- [ ] Small mobile layout works.
-- [ ] Standard mobile layout works.
-- [ ] Tablet layout works.
-- [ ] Laptop layout works.
-- [ ] Desktop layout works.
+## 6. Responsive Quality
+
+- [ ] Mobile layout has been checked.
+- [ ] Tablet layout has been checked.
+- [ ] Laptop layout has been checked.
+- [ ] Desktop layout has been checked.
 - [ ] Navigation adapts correctly.
-- [ ] Content does not overflow unintentionally.
-- [ ] Images scale correctly.
-- [ ] Typography remains readable.
-- [ ] Interactive elements remain usable.
+- [ ] Product grids adapt correctly.
+- [ ] Images maintain appropriate proportions.
+- [ ] Text remains readable.
+- [ ] Buttons and controls are usable.
+- [ ] No unintended horizontal overflow exists.
 
-Test intermediate widths when layout transitions require additional verification.
+## 7. Accessibility
 
-## 6. Accessibility Testing
-
-Review accessibility requirements.
-
-- [ ] Semantic HTML is used.
-- [ ] Keyboard navigation works.
+- [ ] Semantic HTML is used appropriately.
+- [ ] Interactive elements are keyboard accessible.
 - [ ] Focus indicators are visible.
-- [ ] Interactive controls have accessible names.
-- [ ] Forms have appropriate labels.
+- [ ] Text contrast is sufficient.
 - [ ] Images have appropriate alternative text.
-- [ ] Text contrast meets applicable requirements.
-- [ ] Color is not the only information indicator.
-- [ ] Reduced-motion preferences are considered.
-- [ ] Dynamic content is communicated appropriately.
+- [ ] Forms have clear labels.
+- [ ] Error messages are understandable.
+- [ ] Controls have meaningful accessible names.
+- [ ] Color is not the only way information is communicated.
+- [ ] Motion does not create unnecessary accessibility barriers.
 
-## 7. Performance Testing
-
-Evaluate loading and interaction performance.
+## 8. Performance
 
 - [ ] Images are optimized.
+- [ ] Unnecessary assets are removed.
+- [ ] CSS and JavaScript are reasonably optimized.
 - [ ] Fonts are loaded efficiently.
-- [ ] JavaScript is reasonably lightweight.
 - [ ] Unnecessary dependencies are avoided.
-- [ ] Network requests are appropriate.
-- [ ] Layout shifts are minimized.
-- [ ] Animations are efficient.
-- [ ] Core Web Vitals are considered.
-- [ ] Low-end devices are considered.
+- [ ] Page loading has been checked.
+- [ ] Layout stability has been considered.
+- [ ] No unnecessary network requests remain.
 
-Use performance measurement tools when available.
+## 9. SEO
 
-## 8. SEO Review
-
-Verify relevant SEO requirements.
-
-- [ ] Page titles are descriptive.
-- [ ] Meta descriptions are relevant.
+- [ ] Page titles are appropriate.
+- [ ] Meta descriptions are provided.
 - [ ] Heading hierarchy is logical.
-- [ ] URLs are understandable.
-- [ ] Images have appropriate alternative text.
-- [ ] Internal links work.
-- [ ] Canonical URLs are handled when needed.
-- [ ] Sitemap is configured when appropriate.
-- [ ] Robots.txt is configured correctly.
-- [ ] Structured data is accurate when implemented.
-- [ ] Social metadata is configured when appropriate.
+- [ ] URLs are readable.
+- [ ] Images have descriptive alternative text.
+- [ ] Internal links are appropriate.
+- [ ] Social sharing metadata is configured, if required.
+- [ ] Sitemap and robots.txt are configured when appropriate.
+- [ ] Product structured data is accurate, if implemented.
 
-## 9. Security Review
+## 10. Security
 
-Review important security considerations.
-
-- [ ] No secrets are exposed.
-- [ ] Sensitive configuration is protected.
-- [ ] User input is validated.
-- [ ] Unsafe HTML injection is avoided.
-- [ ] Authentication is handled securely when required.
-- [ ] Authorization rules are enforced when required.
+- [ ] No secrets or credentials are exposed.
+- [ ] User inputs are validated.
+- [ ] Forms handle input safely.
+- [ ] External links use appropriate security attributes.
 - [ ] Dependencies are reviewed.
-- [ ] Error messages do not expose sensitive information.
-- [ ] Production configuration is appropriate.
+- [ ] Sensitive configuration is not committed.
+- [ ] HTTPS is used in production where supported.
 
-## 10. Code Quality Review
+## 11. Code Quality
 
-Evaluate the implementation.
-
-- [ ] Code follows project conventions.
-- [ ] Naming is consistent.
+- [ ] Code follows repository standards.
+- [ ] Naming conventions are consistent.
 - [ ] Components have clear responsibilities.
-- [ ] Unnecessary duplicated logic is avoided.
-- [ ] Unused code is removed.
-- [ ] Error handling is appropriate.
-- [ ] Project structure is understandable.
-- [ ] Dependencies are justified.
-- [ ] Documentation is updated when needed.
+- [ ] Unnecessary code is removed.
+- [ ] No unintended console errors remain.
+- [ ] Build completes successfully, if applicable.
+- [ ] Relevant tests have been executed.
+- [ ] Documentation is updated where necessary.
 
-## 11. Browser Compatibility
+## 12. Browser Compatibility
 
-Test relevant browsers and environments.
+- [ ] Main functionality works in target browsers.
+- [ ] Layouts render correctly.
+- [ ] Interactive components behave consistently.
+- [ ] Images and fonts load correctly.
+- [ ] No critical browser-specific issues remain.
 
-Consider:
+## 13. Deployment Readiness
 
-- Google Chrome.
-- Microsoft Edge.
-- Mozilla Firefox.
-- Safari when relevant.
-- Mobile browsers.
-
-Verify important layouts and interactions in supported environments.
-
-Do not claim compatibility with browsers that have not been tested.
-
-## 12. Deployment Readiness
-
-Before deployment, verify:
-
-- [ ] Production build succeeds.
+- [ ] Production configuration has been reviewed.
 - [ ] Environment variables are configured.
-- [ ] Production URLs are correct.
-- [ ] API endpoints are correct.
-- [ ] Required assets are available.
-- [ ] Routing works in production.
-- [ ] Security configuration is reviewed.
-- [ ] No development-only configuration is exposed.
-- [ ] Deployment requirements are documented.
+- [ ] Production build has been verified.
+- [ ] Asset paths are correct.
+- [ ] Routing works in the hosting environment.
+- [ ] Metadata is configured.
+- [ ] No unintended debug content remains.
+- [ ] Deployment authorization has been obtained.
 
-## 13. Issue Classification
+## 14. Issue Severity
 
-Classify discovered issues by severity.
+Classify identified issues by severity.
 
 ### Critical
 
-Issues that prevent essential functionality or create serious security risks.
+Issues that prevent core functionality, compromise security, or make the website unusable.
 
-Examples:
-- Application cannot load.
-- Critical user flows are broken.
-- Sensitive credentials are exposed.
+Must be resolved before release.
 
 ### High
 
-Major issues that significantly affect usability or important functionality.
+Major visual, functional, accessibility, or content issues.
 
-Examples:
-- Important forms do not work.
-- Main navigation is broken.
-- Major content is inaccessible.
+Should be resolved before release.
 
 ### Medium
 
-Issues that affect the experience but do not prevent core usage.
+Noticeable issues that affect usability or consistency but do not block core functionality.
 
-Examples:
-- Inconsistent spacing.
-- Minor responsive defects.
-- Non-critical interaction problems.
+Should be resolved when practical.
 
 ### Low
 
-Minor improvements and cosmetic inconsistencies.
+Minor refinements and non-essential improvements.
 
-Examples:
-- Small alignment differences.
-- Minor visual refinements.
-- Non-essential polish.
+May be scheduled for future updates.
 
-Critical and high-severity issues should be resolved before release unless explicitly accepted and documented.
+## 15. Final QA Report
 
-## 14. AI Quality Assurance Requirements
+Prepare a final report containing:
 
-AI coding agents must:
+- Overall QA status
+- Areas tested
+- Tests performed
+- Issues identified
+- Issues resolved
+- Remaining limitations
+- Recommended improvements
+- Release recommendation
 
-1. Review the original project requirements.
-2. Perform relevant checks after implementation.
-3. Verify important interactions.
-4. Inspect responsive behavior.
-5. Identify accessibility issues.
-6. Review performance and security considerations.
-7. Report discovered defects.
-8. Classify issues by severity.
-9. Document untested areas.
-10. Distinguish verified results from assumptions.
-11. Never fabricate test results.
-12. Never claim complete quality assurance when significant checks remain unfinished.
+Clearly distinguish verified results from items that were not tested.
 
-## 15. Final Project Report
+## 16. Release Criteria
 
-Before declaring a project complete, provide a concise report containing:
+A product catalog website is ready for release when:
 
-- Completed features.
-- Tests performed.
-- Verification results.
-- Known issues.
-- Remaining limitations.
-- Deployment status.
-- Recommended next improvements.
+- Essential requirements are satisfied.
+- Product information is accurate.
+- Critical and high-severity issues are resolved.
+- Main functionality works.
+- Responsive behavior has been checked.
+- Accessibility has been considered.
+- Performance is acceptable.
+- Security has been reviewed.
+- Deployment configuration is ready.
+- Known limitations are documented.
 
-Clearly distinguish completed work from pending work.
+Do not declare a website production-ready based solely on visual appearance.
 
-## 16. Final Release Checklist
+## 17. AI Quality Assurance Requirements
 
-- [ ] Functional requirements are satisfied.
-- [ ] Visual quality is acceptable.
-- [ ] Responsive behavior is verified.
-- [ ] Accessibility has been reviewed.
-- [ ] Performance has been evaluated.
-- [ ] SEO requirements are reviewed.
-- [ ] Security considerations are addressed.
-- [ ] Code quality is acceptable.
-- [ ] Browser compatibility is checked where required.
-- [ ] Production build is verified.
-- [ ] Known issues are documented.
-- [ ] Final project report is prepared.
+AI assistants must:
 
-## 17. Final Principle
+- Review the complete project against this checklist.
+- Verify functionality instead of assuming it works.
+- Report failed and untested items honestly.
+- Never fabricate test results.
+- Prioritize critical and high-severity issues.
+- Avoid marking unchecked items as complete.
+- Provide clear evidence or explanations for important findings.
+- Recommend practical improvements.
 
-A website is not complete simply because it runs.
-
-It is complete when its essential requirements have been implemented, relevant quality checks have been performed, and remaining limitations have been communicated honestly.
+Quality assurance is part of development, not an optional final step.
